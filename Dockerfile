@@ -1,6 +1,5 @@
 # Use the Debian Image
-# FROM debian:buster-slim
-FROM alpine
+FROM debian:buster-slim
 MAINTAINER "Emmet O'Donoghue"
 
 # Set Environment variables
