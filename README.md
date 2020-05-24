@@ -10,4 +10,10 @@ https://docs.anaconda.com/anaconda/user-guide/tasks/docker/
 
 I've simply taken a snapshot of the DockerFile for Debian @ today's date, and adjusted it for my requirements
 
-# Test
+https://hub.docker.com/r/continuumio/miniconda3
+
+
+ docker pull emmet00/miniconda3
+ docker run -i -t emmet00/miniconda3 /bin/bash
+
+
