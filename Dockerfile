@@ -28,9 +28,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
     echo "conda activate base" >> ~/.bashrc && \
     find /opt/conda/ -follow -type f -name '*.a' -delete && \
     find /opt/conda/ -follow -type f -name '*.js.map' -delete && \
-    /opt/conda/bin/conda clean -afy && \
-    /opt/conda/bin/conda update conda -n base --y && \
-    /opt/conda/bin/conda install conda-build -n base --y 
+    /opt/conda/bin/conda clean -afy && 
 
 # @TODO - Unraid specific exports / paths/ envs?
 CMD [ "/bin/bash" ]
