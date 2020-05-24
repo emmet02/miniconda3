@@ -13,7 +13,15 @@ I've simply taken a snapshot of the DockerFile for Debian @ today's date, and ad
 https://hub.docker.com/r/continuumio/miniconda3
 
 
+Steps to get running
+
  docker pull emmet00/miniconda3
+
  docker run -i -t emmet00/miniconda3 /bin/bash
 
 
+# TODO
+* Need to learn what to do in Unraid to expose shell via http - possible that examples exist elsewhere?
+* Need to be able to expose created environments to other dockers (pycharm etc)
+* Look to find a smaller build to use as a base?
+* Resolve the -it run requirements for unraid (working locally no problem)
