@@ -1,6 +1,6 @@
 # Use the Debian Image
 FROM debian:buster-slim
-MAINTAINER "Emmet O'Donoghue"
+MAINTAINER "Emmet ODonoghue"
 
 # Set Environment variables
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
