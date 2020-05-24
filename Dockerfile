@@ -1,6 +1,6 @@
 # Use the Debian Image
 FROM debian:buster-slim
-MAINTAINER "Emmet ODonoghue"
+LABEL maintainer="emmet1@gmail.com"
 
 # Set Environment variables
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
@@ -28,7 +28,9 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
     echo "conda activate base" >> ~/.bashrc && \
     find /opt/conda/ -follow -type f -name '*.a' -delete && \
     find /opt/conda/ -follow -type f -name '*.js.map' -delete && \
-    /opt/conda/bin/conda clean -afy && 
+    /opt/conda/bin/conda clean -afy && \
+    /opt/conda/bin/conda install conda-build -n base --y && \
+    /opt/conda/bin/conda update conda -n base --y
 
 # @TODO - Unraid specific exports / paths/ envs?
 CMD [ "/bin/bash" ]
